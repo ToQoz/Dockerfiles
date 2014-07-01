@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build -t $(whoami)/bitlbee .
+sudo docker run -d -p 6667:6667 -t $(whoami)/bitlbee .

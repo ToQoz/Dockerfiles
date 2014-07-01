@@ -1,0 +1,3 @@
+# Dockerfile of bitlbee
+
+$ ./bootstrap

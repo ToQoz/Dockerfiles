@@ -1,0 +1,7 @@
+register '<BITLBEE PASSWORD>'
+account add jabber <USER_ID IN HIPCHAT_JABBER>@chat.hipchat.com '<PASSWORD IN HIPCHAT>'
+account hipchat set nick_source full_name
+chat add <ROOM_ID IN HIPCHAT_JABBER>@conf.hipchat.com #<CHANNEL>
+channel #<CHANNEL> set nick '<FULLNAME IN HIPCHAT>'
+account hipchat on
+save
