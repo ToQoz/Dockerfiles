@@ -7,4 +7,4 @@ RUN apt-get -y update && \
   apt-get install -y --no-install-recommends mecab mecab-ipadic-utf8 && \
   apt-get clean && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD conf.d/mecab.cnf /etc/mysql/mecab.cnf
+ADD conf.d/mecab.cnf /etc/mysql/conf.d/mecab.cnf
