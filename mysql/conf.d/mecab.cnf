@@ -1,5 +1,5 @@
 [mysqld]
-plugin-load=libpluginmecab.so
+plugin-load=mecab=libpluginmecab.so
 mecab=ON
 
 loose-mecab-rc-file=/etc/mecabrc
