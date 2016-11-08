@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "amakanize"
+
+result = Amakanize.const_get(ARGV[0]).new(ARGV[1])
+if result.respond_to?(:each)
+  result.each do |r|
+    STDOUT.puts r.to_s
+  end
+else
+  STDOUT.puts result.to_s
+end
