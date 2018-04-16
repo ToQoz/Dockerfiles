@@ -40,5 +40,5 @@ WORKDIR /ganache
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
 
-RUN npm install
-CMD ./node_modules/.bin/electron-forge start
+RUN npm install && npm run build-linux
+CMD dist/linux-unpacked/Ganache
